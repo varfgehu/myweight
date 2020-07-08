@@ -9,9 +9,9 @@ Home
 <script src="https://canvasjs.com/assets/script/canvasjs.min.js">
 </script>
 
-<div class="container">
+<div class="container-fluid">
   <div class="row">
-    <div class="col-4">
+    <div class="col-xs-12 col-sm-4">
       <h4>Display personal info</h4>
 
       <p>Hi, {{personal_info.first_name}}! Please check your data.</p>
@@ -46,9 +46,9 @@ Home
         </div>
       </form>
     </div>
-    <div class="col-8">
+    <div class="col-xs-12 col-sm-8">
       <div class="row">
-        <div class="col">
+        <div class="col-xs-12 col-sm-6">
           <h4>Latest measurements</h4>
           <div class="">
             <label for="">Date:</label>
@@ -71,7 +71,7 @@ Home
             <span>{{latest.body_water}} %</span>
           </div>
         </div>
-        <div class="col">
+        <div class="col-xs-12 col-sm-6">
           <h4>Calculations</h4>
           <div>
             <label>BMR:</label>
@@ -102,7 +102,7 @@ Home
     </div>
   </div>
   <div class="row">
-    <div class="col-12">
+    <div class="col-xs-12 col-sm-12">
       <table class="table table-striped" id="weight_table">
         <tr>
           <th scope="col">Date</th>
