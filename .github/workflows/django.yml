@@ -25,6 +25,9 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
+    - name: Set env
+      run: |
+        echo ::set-env name=SECRET_KEY::d707a6dadfc96b25c7ccfba05d1337a5a71e40488e5662f1
     - name: Run Tests
       run: |
         python manage.py test
