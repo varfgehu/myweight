@@ -1,6 +1,6 @@
 from django.test import LiveServerTestCase
 from selenium import webdriver
-from webdriver_manager.chrome import ChromeDriverManager
+#from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.keys import Keys
 
 from .models import Food, Portion, Intake, Measurement, Diary, Personal
@@ -8,7 +8,7 @@ from .models import Food, Portion, Intake, Measurement, Diary, Personal
 class OpenHomeWithoutLoggedInTestCase(LiveServerTestCase):
 
     def setUp(self):
-        self.driver = webdriver.Chrome(ChromeDriverManager().install())
+        self.driver = webdriver.Chrome()
         # super(AccountTestCase, self).setUp()
 
     def tearDown(self):
