@@ -159,7 +159,7 @@ def food(response, food_id ):
 def prepare_meal(response):
     today = date.today()
     now = today.strftime("%Y-%m-%d")
-    meal_type = "breafast"
+    meal_type = "breakfast"
     return add_meal_defined(response, now, meal_type)
 
 def add_meal_defined(response, date, meal_type):
